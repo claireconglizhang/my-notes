@@ -1,0 +1,30 @@
+---
+title: "Welcome to my R notes repository!"
+output:
+  html_document:
+    toc: TRUE
+    toc_depth: 3
+    toc_float: TRUE
+    theme: spacelab
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+```
+
+
+#### This is a personal repository where I store my notes taken during my learning with R.
+
+# About me
+
+[Check out my website: http://congliclairezhang.com](http://congliclairezhang.com)
+
+
+# Machine Learning
+
+#### [Buiding linear regression model](./ML/dataprofessor.R)
+
+
+
+
