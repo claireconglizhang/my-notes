@@ -1,0 +1,51 @@
+---
+title: "Practical Propensity Score Methods Using R (Leite, W.L., 2017)"
+output:
+  html_document:
+    toc: true
+    toc_depth: 4
+    keep_md: true
+date: '2022-10-09'
+---
+
+
+
+Leite, W. L. (2017). Practical propensity score methods using R. Thousand Oaks, CA: Sage Publishing.
+
+Data: Educational Longitudinal Study (ELS) of 2002 and 2006
+
+ - two-stage stratified sampling method where schools were sampled with probability proportional to size (PPS) sampling
+ - Asian and Hispanic students were oversampled
+
+Research question: does participating in a career academy in high school affect future income?
+
+ - treatment measure: "Have you ever been in any of the following kinds of courses or programs in high school?", where option k is "Career academy"
+ - treated proportion: 1,371 (8.5%) students
+
+Think about Rubin's Causal Model and assumptions before we think about propensity scores.
+
+Propensity score (PS) is defined as a conditional probability of treatment assignment, given observed covariates (Rosembaum & Rubin, 1983)
+
+ - if the PS is correctly specified, balancing treatment and control groups with respect to PS also balances them with respect to distributions of covariates
+ - in an RCT, the true PS is .50 for each unit of analysis, whereas in a quasi-experiment, it is unknown
+ 
+Why propensity score 
+
+ - the big idea is to reduce the information in the predictor to a number, which comes in handy when multiple matching variables are available
+ - if treatment selection is strongly ignorable given an observed set of covariates, then it is also stronly ignorable when these covariates are combined into a PS (Rosembaum & Rubin, 1983)
+ - advantages over conditioning on covariates
+   - don't require linear assumptions
+   - problem of differences in distributions of covariates for treatment/control groups is eliminated
+   
+Keep in mind when choosing which covariates to include 
+
+ - Including those related to exposure AND outcome decreases bias and variance
+ - Including those related to outcome (but not exposure) decreases variance but does not affect bias
+ - Including those related to exposure (but not outcome) increases variance but does not affect bias
+ 
+ 
+ 
+
+
+
+

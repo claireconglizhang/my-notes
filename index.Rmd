@@ -1,5 +1,5 @@
 ---
-title: "Welcome to my R notes repository!"
+title: "My Notes"
 output:
   html_document:
     toc: TRUE
