@@ -22,8 +22,10 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Machine Learning
 
-#### [Buiding linear regression model](./ML/dataprofessor.md)
+[Buiding linear regression model](./ML/dataprofessor.md)
 
+[Estimating Treatment Effects with Causal Forests: An Application (Athey and Wager, 2019)](./ML/grf.html)
 
+# Propensity Score Matching
 
-
+[Doubly Robust Estimation with Propensity Score Weighting in R with the survey package (Walter Leite)](./Matching/leite.html)
